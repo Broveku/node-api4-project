@@ -10,10 +10,17 @@ server.use(cors())
 
 
 server.get('/api/users', (req, res)=>{
-    res.json({users:{
+    res.json({users:[
+        {
             name: 'Jordan',
             password: 'FakePassword',
-    }})
+        },
+        {
+            name: 'Josh',
+            password: 'JordanIsBetter'
+        }
+    ]
+    })
 })
 
 
