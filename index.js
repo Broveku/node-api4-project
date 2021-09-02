@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 5000
 const server = express()
 
 server.use(express.json())
+server.use(cors())
 
 
 server.get('/api/users', (req, res)=>{
